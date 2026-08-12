@@ -1,0 +1,14 @@
+# 运行时依赖（打包时用 build_installer.bat，会自动安装）
+PySide6>=6.6,<7
+markitdown[pdf,docx,pptx,xlsx,xls,outlook]==0.1.7
+python-dotenv>=1.0
+# PyInstaller 的 pkg_resources 运行时钩子需要它
+appdirs==1.4.4
+# 本地 OCR（RapidOCR：ONNX 离线推理，模型随包自带，中/英/西文）
+rapidocr-onnxruntime==1.4.4
+# OCR 后处理：长粘词词典恢复（内置词表，纯 Python）
+wordninja==2.0.0
+# 测试工具（打包时不需要）
+pytest
+python-docx
+reportlab

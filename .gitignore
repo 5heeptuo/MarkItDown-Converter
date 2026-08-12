@@ -1,0 +1,22 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# 构建产物
+build/
+dist/
+release/
+
+# PyInstaller spec：保留根目录的 spec（打包配置），忽略其他
+*.spec
+!MarkItDownConverter.spec
+
+# 日志与临时文件
+*.log
+*.tmp
+
+# 安装器中间产物
+installer/*.exe
+installer/Output/
